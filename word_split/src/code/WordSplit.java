@@ -10,7 +10,7 @@ import nbu.file.manage.Txt;
 public class WordSplit {
 	
 	public interface CLibrary extends Library {
-		// 定义并初始化接口的静态变量
+		// 定义并初始化接口的静态变量     我改
 		CLibrary Instance = (CLibrary) Native.loadLibrary(
 				"E://gwz//workspace//NBU_SubjectIndexing//WebRoot//lib//nlpir//win32//NLPIR", CLibrary.class);
 		
