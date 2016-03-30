@@ -16,7 +16,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import test.StopWords;
-import test.WordSplit;
 
 public class ChouquKey {
 public Map<String,Integer> cimap1 = null;
@@ -141,7 +140,7 @@ public static List<String> run(String str,int count) throws Exception{
 		}
 	}
 	String zy = String.copyValueOf(carr).trim();
-	List<String> words = new WordSplit().stopWord(zy);
+	List<String> words = new StopWords().stopWord(zy);
 	List<String> key =ck.getKey(words,count);
 	return key;
 }
