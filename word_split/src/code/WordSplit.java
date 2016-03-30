@@ -12,7 +12,7 @@ public class WordSplit {
 	public interface CLibrary extends Library {
 		// 定义并初始化接口的静态变量   
 		CLibrary Instance = (CLibrary) Native.loadLibrary(
-				"E://gwz//workspace//NBU_SubjectIndexing//WebRoot//lib//nlpir//win32//NLPIRlkx xjs", CLibrary.class);
+				"E://gwz//workspace//NBU_SubjectIndexing//WebRoot//lib//nlpir//win32//NLPIR", CLibrary.class);
 		
 		public int NLPIR_Init(String sDataPath, int encoding,
 				String sLicenceCode);
