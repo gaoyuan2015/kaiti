@@ -1,6 +1,7 @@
 package chouqukey;
 
 import java.util.List;
+
 import nbu.lib.AimKeyDAO;
 import nbu.lib.ItfDAO;
 
@@ -8,7 +9,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import test.WordSplit;
+import test.StopWords;
 
 public class Train {
 	public static final int num = 10000;
@@ -16,7 +17,7 @@ public class Train {
 		Configuration cfg = new Configuration();
 		SessionFactory sf = cfg.configure().buildSessionFactory();
 		Session s = sf.openSession();
-		WordSplit sw = new WordSplit();
+		StopWords sw = new StopWords();
 		for (int d = 1; d <= num; d++) {
 			ItfDAO itf = (ItfDAO) s.get(ItfDAO.class, d);
 			List<String> words = sw.stopWord(itf.getZhaiyao());
