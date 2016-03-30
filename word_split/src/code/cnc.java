@@ -1,3 +1,0 @@
-djadj
-dlakd
-mdanmnd

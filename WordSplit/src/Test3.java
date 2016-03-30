@@ -1,13 +1,7 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import org.wltea.analyzer.core.IKSegmenter;
 import org.wltea.analyzer.core.Lexeme;
@@ -19,8 +13,7 @@ public class Test3 {
 	    public List<String> stopWord(String word) throws IOException {  
 //	        String text="基于java语言开发的轻量级的中文分词工具包深圳的";  
 	        List<String> list1 = new ArrayList<String>();
-	        @SuppressWarnings("resource")
-//			BufferedReader StopWordFileBr = new BufferedReader(new InputStreamReader(new FileInputStream(new File(stopWordTable))));
+	        //			BufferedReader StopWordFileBr = new BufferedReader(new InputStreamReader(new FileInputStream(new File(stopWordTable))));
 //	        Set<String> stopWordSet = new HashSet<String>();  
 	        //初如化停用词集  
 //	        

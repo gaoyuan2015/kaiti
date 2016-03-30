@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="nbu.lib">
+<class name="AimYuLiaoDAO" table="yuliao2">
+<id name="id" column="id">
+<generator class="native"/>
+</id>
+<property name="title" type="java.lang.String"/>
+<property name="zhaiyao" type="java.lang.String" column="abstract"/>
+<property name="keywords" type="java.lang.String"/>
+<property name="fenleihao" type="java.lang.String"/>
+<!-- <property name="leibie" type="java.lang.String" column="leibie"/>
+<property name="leibiename" type="java.lang.String" column="leibieming"/> -->
+</class>
+</hibernate-mapping>

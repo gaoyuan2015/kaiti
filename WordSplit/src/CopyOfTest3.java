@@ -1,13 +1,7 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import org.wltea.analyzer.core.IKSegmenter;
 import org.wltea.analyzer.core.Lexeme;
@@ -17,11 +11,11 @@ public class CopyOfTest3 {
 	
 //	public static final String stopWordTable = "StopWordTable.txt";
 	    public List<String> stopWord(String word) throws IOException {  
-//	        String text="»ùÓÚjavaÓïÑÔ¿ª·¢µÄÇáÁ¿¼¶µÄÖÐÎÄ·Ö´Ê¹¤¾ß°üÉîÛÚµÄ";  
+//	        String text="ï¿½ï¿½ï¿½ï¿½javaï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·Ö´Ê¹ï¿½ï¿½ß°ï¿½ï¿½ï¿½ï¿½Úµï¿½";  
 	        List<String> list1 = new ArrayList<String>();
 //			BufferedReader StopWordFileBr = new BufferedReader(new InputStreamReader(new FileInputStream(new File(stopWordTable))));
 //	        Set<String> stopWordSet = new HashSet<String>();  
-//	        //³õÈç»¯Í£ÓÃ´Ê¼¯  
+//	        //ï¿½ï¿½ï¿½ç»¯Í£ï¿½Ã´Ê¼ï¿½  
 //	        String stopWord = null;  
 //	        for(; (stopWord = StopWordFileBr.readLine()) != null;){  
 //	            stopWordSet.add(stopWord);  
@@ -29,9 +23,8 @@ public class CopyOfTest3 {
 	        StringReader sr=new StringReader(word);  
 	        IKSegmenter ik=new IKSegmenter(sr, true);  
 	        Lexeme lex=null;  
-	        int pos = 0;
-//	        String wordname = null;
-//	        inital();
+	        @SuppressWarnings("unused")
+			int pos = 0;
 	        while((lex=ik.next())!=null){ 
 	        	String str = lex.getLexemeText();
 	        	pos = lex.getBeginPosition();
@@ -44,7 +37,7 @@ public class CopyOfTest3 {
 	        return list1;
 	    }  
 		 public static void main(String[] args) throws Exception {
-			 List<String> res = new CopyOfTest3().stopWord("¸ÖÌúÊÇÔõÃ´Á¶³ÉµÄ");
+			 List<String> res = new CopyOfTest3().stopWord("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Éµï¿½");
 			 System.out.println(res);
 		 }
 	}

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="nbu.lib">
+<class name="AimQikanDAO" table="wwlyqk">
+<id name="id" column="id">
+<generator class="native"/>
+</id>
+<property name="qikanname" type="java.lang.String"/>
+<property name="issn" type="java.lang.String"/>
+<property name="lingyu" type="java.lang.String"/>
+<!-- <property name="leibie" type="java.lang.String" column="leibie"/>
+<property name="leibiename" type="java.lang.String" column="leibieming"/> -->
+</class>
+</hibernate-mapping>
