@@ -3,7 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernate"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/WordSplit"/>
 	<classpathentry kind="lib" path="F:/library/IKAnalyzer2012_u6.jar"/>
 	<classpathentry kind="lib" path="F:/library/mysqldriver.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/preproccess"/>

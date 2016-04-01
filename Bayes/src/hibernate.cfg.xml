@@ -34,6 +34,7 @@
         <mapping resource="nbu/lib/dao/Pro1DAO.hbm.xml"/>
         <mapping resource="nbu/lib/dao/Pro2DAO.hbm.xml"/>
         <mapping resource="nbu/lib/dao/IdfDAO.hbm.xml"/>
+        <mapping resource="nbu/lib/dao/TestDAO.hbm.xml"/>
         
         <!--<mapping resource="nbu/lib/dao/Pro1.hbm.xml"/>
         <mapping resource="nbu/lib/dao/Pro2.hbm.xml"/>

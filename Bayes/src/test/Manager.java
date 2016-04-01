@@ -32,7 +32,7 @@ public class Manager {
 		}
 		// 再乘以先验概率
 		ret *= calculatePc(Cj);
-		System.out.println(Cj+"  概率 probility为：" + ret);
+//		System.out.println(Cj+"  概率 probility为：" + ret);
 		return ret;
 	}
 
